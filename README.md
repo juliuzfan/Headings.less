@@ -2,7 +2,7 @@
 
 ##Description
 
-The **Fibonacci sequence** is used _conveniently_ to calculate the heading tags sizes. This sets the `font-size` CSS property powered by the amazing [Less CSS](http://lesscss.org/).
+The **Fibonacci sequence** is used _conveniently_ to calculate the heading tags sizes. This sets the `font-size` CSS property and it´s powered by the amazing [Less CSS](http://lesscss.org/).
 
 The sequence 1, 1, 2, 3, 5, 8, 13... it´s used like percentages, ignoring the first "1" and assuming the base size is the next "1" or a 100%.
 
