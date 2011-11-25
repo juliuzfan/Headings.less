@@ -1,5 +1,7 @@
 #Headings.less
 
+######STYLING YOUR CAPTIONS WITH RHYTHM
+
 ##Description
 
 The **Fibonacci sequence** is used _conveniently_ to calculate the heading tags sizes. This sets the `font-size` CSS property and it´s powered by the amazing [Less CSS](http://lesscss.org/).
