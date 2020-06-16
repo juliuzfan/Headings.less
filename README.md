@@ -1,20 +1,20 @@
-#Headings.less
+# Headings.less
 
-######STYLING YOUR CAPTIONS WITH RHYTHM
+###### STYLING YOUR CAPTIONS WITH RHYTHM
 
-##Description
+## Description
 
 The **Fibonacci sequence** is used _conveniently_ to calculate the heading tags sizes. This sets the `font-size` CSS property and it´s powered by the amazing [Less CSS](http://lesscss.org/).
 
 The sequence 1, 1, 2, 3, 5, 8, 13... it´s used like percentages, ignoring the first "1" and assuming the base size is the next "1" or a 100%.
 
-##The Mixins
+## The Mixins
 
 Headings.less provide you four different creative ways to use the fibbonacci sequence. Two are what I call **successions** and the other two are what I call **base** sequences, both have an ASCending and DESCending version.
 
 The `.successionDESC` and `.successionASC` mixins are calculated as follows:
 
-###.successionDESC
+### .successionDESC
 
 .successionDESC() takes the @headings-max-size variable or the passed value and apply it to the h1 tag. Then, the next sizes are calculated substracting the percentage in the sequence from the preceding heading size (20%, 30%, 50%, 80%, 13%). This is achieved dividing e.g.:
 
@@ -27,7 +27,7 @@ The `.successionDESC` and `.successionASC` mixins are calculated as follows:
     h6 = ( h5 / 1.13 )
 
 
-###.successionDESC
+### .successionDESC
 .successionASC() is pretty the same, but go from h6 to h1 and the @headings-min-size or passed value it´s applied to h6, instead of substracting, now we add. This is achieved multiplying e.g.:
 
     h6 = ( @headings-min-size * 1 )
@@ -44,7 +44,7 @@ The `.successionDESC` and `.successionASC` mixins are calculated as follows:
 
 The `.baseDESC` and `.baseASC` works in the same way but the operations are all applied to the base font size, e.g.:
 
-###.baseDESC
+### .baseDESC
 
 For descending order:
 
@@ -56,7 +56,7 @@ For descending order:
     .
 
 
-###.baseASC
+### .baseASC
 
 For ascending order
 
@@ -69,11 +69,11 @@ For ascending order
 
 ---
 
-##Configuration
+## Configuration
 
 At the top of the headings.less file you could setup the next things:
 
-###Variables
+### Variables
 
 `@headings-max-size` & `@headings-min-size`:
 
@@ -103,7 +103,7 @@ Be aware that you are using the units and the max/min values correctly. This is 
 
 ---
 
-###Configuration Bundle
+### Configuration Bundle
 
 The `#headings-config` bundle has some mixins to customize **global** heading styles and the **specific** ones. You just have to write the normal CSS code to be applied inside the mixins brackets.
 
@@ -127,11 +127,11 @@ This bundle looks like this and it's self explanatory:
 
 ---
 
-##Usage
+## Usage
 
 To use this in your projects you have to follow 3 simple steps after downloading or forking headings.less.
 
-###1. Configure
+### 1. Configure
 
 Open the **headings.less** file and edit your custom preferences. e.g.:
 
@@ -171,7 +171,7 @@ Open the **headings.less** file and edit your custom preferences. e.g.:
 	}
 
 
-###2. Import
+### 2. Import
 
 Just import the file within your main less file. e.g.:
 
@@ -181,7 +181,7 @@ In your **main.less**
 
 By default the headings.less doesn't output nothing but a CSS comment block with a legal disclaimer. See the LICENCE file for more info.
 
-###3.Run the mixins
+### 3.Run the mixins
 
 You could do this just writing the next Less CSS code (see http://lesscss.org for more info if you are new to Less):
 
